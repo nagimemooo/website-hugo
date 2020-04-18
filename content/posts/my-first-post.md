@@ -7,9 +7,9 @@ tags: ["golang"]
 ---
 > 透過gin框架可以快速寫一個伺服器
 
-效果：
-http://localhost:8080/v1/word/jenny
-出現 hello jenny
+效果：  
+http://localhost:8080/v1/word/jenny  
+出現 hello jenny  
 
 main.go
 ```go
