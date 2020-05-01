@@ -1,0 +1,23 @@
+baseURL = "https://nagimemooo.github.io"
+languageCode = "zh-Hans"
+defaultContentLanguage = "tc"
+title = "nagimemooo 筆記"
+theme = "dream"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  # background = "black"
+  backgroundImage = "/me/background.jpg"
+  linkColor = "seagreen"
+
+  author = "nagi"
+  description = "nagi 沙發馬鈴薯 少女 "
+  avatar = "/img/docker.jpg"
+  motto = "ㄓ。"
+  
+  email = "nagimemooo@gmail.com"

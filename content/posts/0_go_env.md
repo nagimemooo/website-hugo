@@ -3,7 +3,9 @@ title: "[Ｇo] 安裝環境 MAC Note"
 date: 2020-04-18T10:30:25+08:00
 draft: false
 tags: ["golang"]
-
+cover: /img/go.png
+categories:
+  - Tech筆記
 ---
 > 之前在windows環境下安裝過go環境，這次在ＭＡＣ環境也裝一次並記錄
 > 1.安裝官方ＧＯ：https://golang.org/
@@ -11,6 +13,7 @@ tags: ["golang"]
 > 3.找個喜歡的ＩＤＥ設定開始寫Ｇo 「推薦Visual Studio Code」
 > 因為網上已經不少文章關於這些說明，所以簡單記錄幾個keyword與操作
 
+<!--more-->
 **1.ＧＯ網站下載直接點擊安裝**
 會幫你安裝到/usr/local/go底下
 
