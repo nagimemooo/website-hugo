@@ -1,11 +1,11 @@
 ---
-title: "[Ｇo] 安裝環境 MAC Note"
+title: "[ Go 01 ] 安裝環境 MAC Note"
 date: 2020-04-18T10:30:25+08:00
 draft: false
 tags: ["golang"]
 cover: /img/go.png
 categories:
-  - Tech筆記
+  - Go
 ---
 > 之前在windows環境下安裝過go環境，這次在ＭＡＣ環境也裝一次並記錄
 > 1.安裝官方ＧＯ：https://golang.org/

@@ -2,6 +2,8 @@
 title: "Github_hugo"
 date: 2020-05-01T18:42:55+08:00
 draft: false
+tags:
+  - hugo
 ---
 
 > 本章介紹如何在github套用hugo主題做好一個自己的部落格網站．

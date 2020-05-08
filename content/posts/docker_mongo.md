@@ -1,5 +1,5 @@
 ---
-title: "[docker]啟動mongo DB與簡單操作"
+title: "[ docker ]啟動 mongo DB 與簡單操作"
 date: 2020-05-01T10:30:25+08:00
 draft: false
 cover: /img/docker.jpg

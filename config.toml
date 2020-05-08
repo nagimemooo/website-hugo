@@ -12,12 +12,12 @@ theme = "dream"
 
 [params]
   # background = "black"
-  backgroundImage = "/me/background.jpg"
+  backgroundImage = "/img/chihiro1.jpg"
   linkColor = "seagreen"
 
   author = "nagi"
   description = "nagi 沙發馬鈴薯 少女 "
   avatar = "/img/docker.jpg"
-  motto = "ㄓ。"
+  motto = "列表式顯示請點下列icon。"
   
   email = "nagimemooo@gmail.com"
