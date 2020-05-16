@@ -108,7 +108,7 @@ go tool cover -html=coverage.out
 ```
 這個真的很酷，用網頁產生報告，而且非常視覺化，
 可以看出剛剛沒有寫到的UserName()測試為紅色
-![](http://d1dwq032kyr03c.cloudfront.net/upload/images/20200508/201216880B5IQfv3w1.png)
+![](/img/posts/test_coverage.png)
 
 
 -----
