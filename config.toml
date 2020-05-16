@@ -1,7 +1,7 @@
 baseURL = "https://nagimemooo.github.io"
 languageCode = "zh-Hans"
 defaultContentLanguage = "tc"
-title = "nagimemooo 筆記"
+title = "nagimemooo"
 theme = "dream"
 
 
@@ -18,6 +18,6 @@ theme = "dream"
   author = "nagi"
   description = "nagi 沙發馬鈴薯 少女 "
   avatar = "/img/docker.jpg"
-  motto = "列表式顯示請點下列icon。"
+  motto = "如有疑問與建議可以mail給我讓我知道，列表式顯示請點下一排icon。"
   
   email = "nagimemooo@gmail.com"
