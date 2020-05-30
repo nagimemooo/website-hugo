@@ -12,7 +12,7 @@ theme = "dream"
 
 [params]
   # background = "black"
-  backgroundImage = "/img/chihiro1.jpg"
+  backgroundImage = "/img/dream.jpg"
   linkColor = "seagreen"
 
   author = "nagi"

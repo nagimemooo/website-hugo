@@ -4,6 +4,8 @@ date: 2020-05-01T18:42:55+08:00
 draft: false
 tags:
   - hugo
+categories:
+  - Tech筆記
 ---
 
 > 本章介紹如何在github套用hugo主題做好一個自己的部落格網站．
@@ -64,6 +66,8 @@ Press Ctrl+C to stop
 記得結束務必按 不然下次啟動
 #### Step 6: Build static pages
 
+Ｄ 參數代表要不要輸出草稿文章
+
 * hugo -D
 
 將會生成./public/ 資料夾，
@@ -96,6 +100,6 @@ git commit -m "Initial commit"
 git push -u origin master
 
 
-開啟https://xxx.github.io/ 看到結果
+開啟https://xxx.github.io/ 等個幾分鐘會看到結果
 
 

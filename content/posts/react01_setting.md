@@ -2,7 +2,7 @@
 title: "[ React ] 初始開發環境設定與名詞介紹"
 date: 2020-05-16T15:42:53+08:00
 lastmod: 2020-05-16T15:42:53+08:00
-author: Author Name
+author: Nagi
 categories: ["前端"]
 tags: ["react", "vscode"]
 # showcase: true
@@ -32,7 +32,7 @@ npm install -g create-react-app
 
 #### 使用create-react-app 建立專案
 ```bash
-～create-react-app my-react-demo 
+～create-react-app my-react-demo
 Creating a new React app in /Users/xxx/front/my-react-demo.
 ```
 
@@ -40,6 +40,13 @@ Creating a new React app in /Users/xxx/front/my-react-demo.
 ```bash
 npm start
 ```
+
+
+public/index.html
+基本的HTML架構，內有```html
+"<div id="root"></div>"
+```這樣的內容
+
 
 #### vscode 外掛
 - ESlint 插件 ->程式碼規範檢查
