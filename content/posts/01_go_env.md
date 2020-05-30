@@ -1,19 +1,32 @@
 ---
-title: "[ Go 01 ] 安裝環境 MAC Note"
+title: "[Ｇo 01] 配置GO開發環境三步驟 筆記"
 date: 2020-04-18T10:30:25+08:00
 draft: false
 tags: ["golang"]
 cover: /img/go.png
 categories:
-  - Go
+  - +後端 go
 ---
-> 之前在windows環境下安裝過go環境，這次在ＭＡＣ環境也裝一次並記錄
-> 1.安裝官方ＧＯ：https://golang.org/
-> 2.配置Ｇo所需要環境變數
-> 3.找個喜歡的ＩＤＥ設定開始寫Ｇo 「推薦Visual Studio Code」
-> 因為網上已經不少文章關於這些說明，所以簡單記錄幾個keyword與操作
+## 配置GO開發環境三步驟
+1.安裝官方ＧＯ：https://golang.org/ <br>
+2.配置Ｇo所需要環境變數 <br>
+3.找個喜歡的ＩＤＥ設定開始寫Ｇo 「推薦Visual Studio Code」 <br>
+
 
 <!--more-->
+
+
+直接看參考文章: <br>
+[[Go] Go 語言於 Windows 上之安裝與環境設定](https://oranwind.org/go-go-yu-yan-yu-windows-shang-zhi-an-zhuang-yu-huan-jing-she-ding/ "[Go] Go 語言於 Windows 上之安裝與環境設定") <br>
+[Mac上Go環境和VS Code的正確安裝與配置方法](https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/391186/) <br>
+[[Go] 使用 Visual Studio Code 上建置 Go 開發環境](https://oranwind.org/go-ide-visual-studio-code/ "[Go] 使用 Visual Studio Code 上建置 Go 開發環境") <br>
+
+
+------------
+以下記錄本人的安裝筆記
+
+### MAC安裝筆記
+
 **1.ＧＯ網站下載直接點擊安裝**
 會幫你安裝到/usr/local/go底下
 
@@ -52,19 +65,26 @@ go version go1.14 darwin/amd64
 會列出上述設定可以確認
 ```
 
-*如果要重新安裝*
+註:如果要重新安裝
 也是要把/usr/local/go刪除，環境變數拿掉，再安裝一次動作。
 
-延伸閱讀-寫的超棒的文章
-[Golang — GOROOT、GOPATH、Go-Modules-三者的關係介紹](https://medium.com/%E4%BC%81%E9%B5%9D%E4%B9%9F%E6%87%82%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/golang-goroot-gopath-go-modules-%E4%B8%89%E8%80%85%E7%9A%84%E9%97%9C%E4%BF%82%E4%BB%8B%E7%B4%B9-d17481d7a655)
 
-3.IDE推薦
-下載Visual Studio Code
-安裝Go外掛+安裝依賴包支援
-[Mac上Go環境和VS Code的正確安裝與配置方法](https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/391186/)
+**3.IDE推薦** (直接看參考文章介紹即可)<br>
+3-1 下載 Visual Studio Code<br>
+3-2 安裝Go外掛<br>
+3-3 安裝依賴包支援go get下載以下工具:<br>
+dlv.exe	go 语言调试工具<br>
+gocode.exe	go语言检查，自动补全<br>
+godef.exe 	go语言定义和引用的跳转<br>
+golint.exe 	go语言规范检查<br>
+go-outline.exe 	用于在Go源文件中提取JSON形式声明的简单工具<br>
+gopkgs.exe 	快速列出可用包的工具<br>
+gorename.exe 	在Go源代码中执行标识符的精确类型安全重命名<br>
+goreturns.exe 	类似fmt和import的工具，使用零值填充Go返回语句以匹配func返回类型<br>
+go-symbols.exe 	从go源码树中提取JSON形式的包符号的工具<br>
+gotour.exe 	go语言指南网页版<br>
+guru.exe 	go语言源代码有关工具，如代码高亮等<br>
 
-
-I have a requirement for recording  "case *ua.DataChangeNotification" time in millisecond , Is it possible to get  publishtime ?
 
 
 

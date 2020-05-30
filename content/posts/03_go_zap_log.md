@@ -4,7 +4,7 @@ date: 2020-05-08T23:51:23+08:00
 lastmod: 2020-05-08T23:51:23+08:00
 author: Nagi
 cover: /img/go.png
-categories: ["Go"]
+categories: [" +後端 go"]
 tags: ["golang", "log"]
 # showcase: true
 draft: false
