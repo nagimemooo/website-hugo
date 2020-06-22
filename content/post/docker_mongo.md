@@ -76,11 +76,22 @@ CreateDB"test"，新增一筆Collection"user"，與新增Documanet如下(Json格
 - 可以再有提供shell指令視窗的工具上下指令去做更新進階的搜尋，
 - 例如mongo 3T上方就有視窗可以使用．
 
+------------
+
+
 ## 搜尋指令
 #### 搜尋全部
 db.getCollection('user').find({}) 
 #### 搜尋by_id
 db.getCollection('user').find({_id:ObjectId("5eaa780f3dfac43981e4412c")})
+
+#### 限制顯示的欄位: 1可見,0不可見
+db.getCollection('user').find({},{profile.name:1})
+
+有一點像是
+SELECT profile.name FROM user
+_id預設顯示，可以關掉_id:0 ,
+
 #### 搜尋內容值
 db.getCollection('user').find({"profile.name":"user1"})
 #### 搜尋範圍 數字型態  
@@ -90,16 +101,22 @@ db.getCollection('user').find({"profile.gender":"F","profile.age":{$gt:2,$lte:18
 按UTF-8進行字典排序 表搜尋字母A~Z間
 db.getCollection('user').find({"profile.name":{$gt:"a",$lte:"z"}})
 
-## 計算總數
-db.getCollection('user').find().count()
-
-## 排序
+#### 排序
 依命名排序，其中 1 为升序排列，而 -1 是用于降序排列
 db.getCollection('user').find({}).sort({name:1})
 
-### 顯示筆數(limit)與開始(skip)
+#### 顯示筆數(limit)與開始(skip)
 可以用他來做分頁讀取
 db.getCollection('user').find({}).sort({name:1}).skip(0).limit(2)
+
+
+------------
+
+
+### 計算總數
+db.getCollection('user').find().count()
+
+------------
 
 
 ## 批次更新 
@@ -128,7 +145,7 @@ db.getCollection('user').update({"profile.name":d.profile.name},d);
 });
 ```
 
-##  刪除欄位
+####  刪除欄位
 ```bash
 db.getCollection('user').find().forEach( function(d) {
 delete d.description
@@ -136,6 +153,9 @@ db.getCollection('user').update({"profile.name":d.profile.name},d);
     print(d.profile.name+" process change done" );  
 });
 ```
+
+------------
+
 
 
 
@@ -149,5 +169,6 @@ mongo 127.0.0.1:27017/test Change.js
 執行結果與上述內容一樣
 
 
+------------
 本章對mongo的簡單操作到此結束，
 之後再介紹如何用golang程式去對mongo CRUD操作．

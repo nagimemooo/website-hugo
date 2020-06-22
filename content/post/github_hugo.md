@@ -1,5 +1,5 @@
 ---
-title: "Github_hugo"
+title: "[hugo]Github_hugo"
 date: 2020-05-01T18:42:55+08:00
 draft: false
 tags:
@@ -57,6 +57,12 @@ summary: "The summary image should be a custom one"
 summaryImage: "summary_2.jpg"
 resources:
 - src: summary_2.jpg
+
+#### 圖片新增
+將圖片放置在website-hugo/static/images
+文章內可用相對路徑新增![](/images/xxx)
+
+
 
 #### Step 5: 啟動本地server
 

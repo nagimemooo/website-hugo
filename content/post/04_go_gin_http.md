@@ -1,10 +1,10 @@
 ---
-title: "[ Go 04 ] 使用 Gin 框架快速建立 http 服務"
+title: "[Go 04] 使用 Gin 框架快速建立 http 服務"
 date: 2020-05-09T00:00:05+08:00
 lastmod: 2020-05-09T00:00:05+08:00
 author: Nagi
 cover: /img/go.png
-categories: [" +後端 go"]
+categories: [" 後端 go"]
 tags: ["golang", "gin"]
 # showcase: true
 draft: false

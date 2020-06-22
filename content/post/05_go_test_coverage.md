@@ -1,10 +1,10 @@
 ---
-title: "[ Go 05 ] 寫測試並產生網頁版報告看覆蓋率"
+title: "[Go 05] 寫測試並產出一目瞭然的網頁版覆蓋率報告 再也不用怕遺漏"
 date: 2020-05-09T00:02:42+08:00
 lastmod: 2020-05-09T00:02:42+08:00
 author: Nagi
 cover: /img/go.png
-categories: ["+後端 go"]
+categories: ["後端 go"]
 tags: ["golang", "test"]
 # showcase: true
 draft: false
@@ -17,9 +17,9 @@ draft: false
 <!--more-->
 
 
-說明：新建一個檔案user_test.go，並未func取名TestＸＸＸ(t *testing.T)
-如果用VS code，可以在上方看到 run test | debug test 按鈕可以按，十分方便
-利用 t.Errorf 觸發錯誤
+說明：新建一個檔案ＸＸ_test.go，並為func取名TestＸＸＸ(t *testing.T)
+
+
 ```go
 //測試打GET /api/v1/user 去跑User() 會拿到“ＯＫ”
 func TestUser(t *testing.T) {
@@ -30,6 +30,7 @@ func TestUser(t *testing.T) {
 	body := Get(uri, engine)
 	fmt.Printf("response:%v\n", string(body))
 	if !reflect.DeepEqual(string(body), "\"OK\"") {
+		//利用 t.Errorf 觸發錯誤
 		t.Errorf("Get user name need to be ok!")
 	}
 }
@@ -87,6 +88,9 @@ func initRoutes_mock(e *gin.Engine) {
 
 ```
 #### 測試單一個function
+如果用VS code，可以在上方看到 run test | debug test 按鈕可以按，十分方便
+
+#### 測試單一檔案內所有測試
  cover有帶的話會算出覆蓋率，並要在該目錄下去執行，這邊跑出來結果大約有57.1% 的覆蓋
 ```bash
 $go test -v -cover=true user_test.go user.go
@@ -108,15 +112,16 @@ go tool cover -html=coverage.out
 ```
 這個真的很酷，用網頁產生報告，而且非常視覺化，
 可以看出剛剛沒有寫到的UserName()測試為紅色
-![](/img/posts/test_coverage.png)
+![](/images/post/test_coverage.png)
 
 
 -----
 
-當然寫測試還有很多判斷的條件等等，是否等於，是否不等於，各種輸出可能，
-雖然也會花上一些時間，但寫測試是為了避免之後維護及更改不小心動到邏輯等，
-有時間的話還是要把這段補上喔！（一開始覺得有些範例太難寫，到後來越來越沈重...QQ）
+當然寫測試還有很多判斷的條件等等，是否等於，是否不等於，各種輸出可能．
 
+寫完之後，可以為下一次更動後確認邏輯，看跑過測試真的很有療癒的感覺！！！:grin:
 
-參考文章：  
+-----
+
+覺得有疑問嗎？可以再進一步看看參考文章：  
 [基于golang gin框架的单元测试](https://studygolang.com/articles/11836 "基于golang gin框架的单元测试")

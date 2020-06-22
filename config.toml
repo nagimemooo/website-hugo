@@ -69,11 +69,11 @@ mainSections = ["post"]
   weight = 350
   url = "/about/"
 
-  [[menu.main]]
-  name = "Contact"
-  identifier = "contact"
-  weight = 400
-  url = "/contact/"
+#  [[menu.main]]
+#  name = "Contact"
+#  identifier = "contact"
+#  weight = 400
+#  url = "/contact/"
 
 [markup]
 

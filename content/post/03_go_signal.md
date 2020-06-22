@@ -1,21 +1,23 @@
 ---
-title: "[ Go 02 ] 信號處理和退出程式"
+title: "[Go 03] 信號處理和退出程式"
 date: 2020-05-01T22:36:13+08:00
 lastmod: 2020-05-01T22:36:13+08:00
 author: Nagi 傷腦筋
 cover: /img/go.png
-categories: [" +後端 go"]
+categories: [" 後端 go"]
 tags: ["golang", "signal"]
-# showcase: true
-draft: false
+
 ---
 
-go實作接收命令而中止指令．
+本文教學：
+- go實作接收命令而中止程式．
+- 會用到channel管道來進行阻塞，並接收os/signal訊號
 
 <!--more-->
 
 > 一般在執行go run main.go後就會馬上回到命令列
-> 這邊實作當接收到ctrl+c或是終止程式才停止
+> 這邊實作當接收到ctrl+c或是終止程式才會停止程式
+
 
 
 上程式碼：
@@ -25,14 +27,14 @@ func main() {
 	fmt.Println("start")
 	errs := make(chan error, 1)
 	listenForＳignal(errs)
-	c := <-errs
+	c := <-errs  //阻塞程式
 	fmt.Println("terminating:", c)
 }
 
 func listenForＳignal(errChan chan error) {
 	go func() {
 		c := make(chan os.Signal)
-		signal.Notify(c, syscall.SIGINT, syscall.SIGTERM)
+		signal.Notify(c, syscall.SIGINT, syscall.SIGTERM)//要終止的訊號
 
 		errChan <- fmt.Errorf("%s", <-c)
 	}()
@@ -84,7 +86,8 @@ start
 terminating: terminated
 ```
 
+------------
+
+
 後記：不太知道到底要怎麼要在vscode debug模式
 去模擬ctrl+c時會跑到的地方來看程式，google未有結果，無解
-
-

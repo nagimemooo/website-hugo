@@ -1,11 +1,10 @@
 ---
-title: "[ React ] 初始開發環境設定與名詞介紹"
+title: "[React] 初始開發環境設定與名詞介紹"
 date: 2020-05-16T15:42:53+08:00
 lastmod: 2020-05-16T15:42:53+08:00
 author: Nagi
 categories: ["前端"]
 tags: ["react", "vscode"]
-# showcase: true
 draft: false
 ---
 

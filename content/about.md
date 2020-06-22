@@ -7,6 +7,13 @@ author = "Hugo Authors"
 
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 
-Hugo makes use of a variety of open source projects including:
+#### About Me
+一名打雜ＩＴ小小工程師，正在自學Golang後端與React 前端語言，<br>
+本部落格皆為自學的筆記，如有任何問題與交流，歡迎 mail 給我告知，<br>
+也歡迎職缺邀請，謝謝您的觀看＾＾<br>
+
+
+#### Mail
+nagimemoo@gmail.com
+
