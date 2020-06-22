@@ -1,23 +1,89 @@
 baseURL = "https://nagimemooo.github.io"
-languageCode = "zh-Hans"
-defaultContentLanguage = "tc"
 title = "nagimemooo"
-theme = "dream"
-
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+theme = "soho"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+summarylength = 10
+enableEmoji = true
+paginate = 5
 
 [params]
-  # background = "black"
-  backgroundImage = "/img/dream.jpg"
-  linkColor = "seagreen"
+title = "Nagi Memo"
+description = "Nagi's technical memo"
+# gravatar = "soho@example.com"
+images = ["images/profile.png"]
+profilePicture = "images/profile.png"
+copyright = "Nagi"
+#license = "CC BY-SA 4.0"
+#licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+builtWith = true
+mainSections = ["post"]
 
-  author = "nagi"
-  description = "nagi 沙發馬鈴薯 少女 "
-  avatar = "/img/docker.jpg"
-  motto = "如有疑問與建議可以mail給我讓我知道，列表式顯示請點下一排icon。"
-  
-  email = "nagimemooo@gmail.com"
+## Set custom theme color.
+# themeColor = "#fc2803"
+
+ # [[params.socialIcons]]
+ # icon = "fa-linkedin"
+ # title = "Linkedin"
+ # url = "#"
+
+ # [[params.socialIcons]]
+ # icon = "fa-github"
+ # title = "GitHub"
+ # url = "https://github.com/alexandrevicenzi/soho"
+
+#  [[params.socialIcons]]
+#  icon = "fa-twitter"
+#  title = "Twitter"
+#  url = "#"
+
+[taxonomies]
+  series = "series"
+  category = "categories"
+  tag = "tags"
+
+[menu]
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 100
+  identifier = "posts"
+  url = "/posts/"
+
+  [[menu.main]]
+  name = "Categories"
+  weight = 200
+  identifier = "categories"
+  url = "/categories/"
+
+  [[menu.main]]
+  name = "Tags"
+  weight = 200
+  identifier = "tags"
+  url = "/tags/"
+
+  [[menu.main]]
+  name = "About"
+  identifier = "about"
+  weight = 350
+  url = "/about/"
+
+  [[menu.main]]
+  name = "Contact"
+  identifier = "contact"
+  weight = 400
+  url = "/contact/"
+
+[markup]
+
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true
+  style = "monokai"
+  tabWidth = 4
